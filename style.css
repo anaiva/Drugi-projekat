@@ -1,0 +1,49 @@
+body {
+  background-color: rgb(136, 136, 136);
+}
+
+ul {
+  list-style: none;
+  
+}
+ul li {
+ position: relative;
+ padding: 10px 5px 10px 50px;
+ cursor: pointer; 
+ list-style-image: url("./starsolid.gif");
+ 
+ background: #eee;
+ font-size: 18px;
+ 
+ }
+ ul li:nth-child(odd) {
+  background: #dddada;
+}
+.zatvori {
+  color: blue;
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-weight: bold;
+  font-size: 25px;
+  padding: 10px;
+}
+.zatvori .checked {
+  color: white;
+}
+ul li.checked {
+  background: blue;
+  color: rgb(252, 247, 247);
+  text-decoration: line-through;
+  list-style: none;
+}
+
+#novi {
+  clear: both;
+  display: table;
+  width: 50%;
+  padding: 15px 20px;
+  font-size: 25px;
+}
+
+
