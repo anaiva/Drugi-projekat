@@ -1,26 +1,50 @@
+/* * {
+  font-family: Geneva, Verdana, Tahoma, sans-serif;
+} */
 body {
+  background-color: rgb(3, 3, 165);
+}
+.container {
+  width: 70%;
+  border: 5px solid blue;
+  border-radius: 2px;
   background-color: rgb(136, 136, 136);
+  padding: 50px;
+  min-height: 500px;
+  margin: auto;
+  margin-top: 50px;
+  
 }
 
 ul {
   list-style: none;
+  
   
 }
 ul li {
  position: relative;
  padding: 10px 5px 10px 50px;
  cursor: pointer; 
- list-style-image: url("./starsolid.gif");
- 
- background: #eee;
+ list-style-image: url("./slike/starsolidbg136.gif"); 
+ background: rgb(206, 206, 206);
  font-size: 18px;
+ color: rgb(3, 3, 165);
  
  }
  ul li:nth-child(odd) {
-  background: #dddada;
+  background: rgb(185, 184, 184);
+}
+ul li.checked {
+  background: blue;
+  color: rgb(189, 186, 186);
+  text-decoration: line-through;
+  list-style-image: url("./slike/starsolidbluebdg136.gif");
+}
+ul li, ul li.chacked {
+  border-radius: 3px;
 }
 .zatvori {
-  color: blue;
+  color: rgb(3, 3, 165);
   position: absolute;
   right: 0;
   top: 0;
@@ -28,22 +52,41 @@ ul li {
   font-size: 25px;
   padding: 10px;
 }
-.zatvori .checked {
-  color: white;
-}
-ul li.checked {
-  background: blue;
-  color: rgb(252, 247, 247);
-  text-decoration: line-through;
-  list-style: none;
-}
-
 #novi {
+  text-align: center;  
+  margin: auto;
   clear: both;
   display: table;
-  width: 50%;
+  width: 80%;
   padding: 15px 20px;
   font-size: 25px;
 }
+h2 {
+  text-align: center;  
+}
+#dodaj, #noviToDo {
+  border: 2px solid blue;
+  color: rgb(3, 3, 165);
+  box-shadow: 1px 1px blue;
+  border-radius: 3px;
+}
+#dodaj {
+  color: blue;
+  font-weight: bold;  
+  padding: 0px 15px;
+  margin: 0px 20px;
+  background-color: rgb(185, 184, 184);   
+}
+
+input::placeholder {
+  color: blue;
+  padding-left: 10px; 
+}
+input {
+  width: 80%;
+  padding-left: 10px;   
+}
+
+
 
 
