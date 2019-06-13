@@ -1,6 +1,7 @@
-/* * {
+
+* {
   font-family: Geneva, Verdana, Tahoma, sans-serif;
-} */
+}
 body {
   background-color: rgb(3, 3, 165);
 }
@@ -86,7 +87,3 @@ input {
   width: 80%;
   padding-left: 10px;   
 }
-
-
-
-
